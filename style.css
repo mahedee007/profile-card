@@ -3,27 +3,54 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    width: 100vh;
+   
     height: 100vh;
     background-color:hsl(185, 75%, 39%);
     background-image: url(./images/bg-pattern-top.svg);
     /* background-repeat: no-repeat; */
     background-size:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
 }
 .container{
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    box-shadow: ;
-    background-color: hsl(0, 0%, 59%);
+    
+    border-radius:15px;
+    background-color: #fff;
     width:500px;
+    height: 600px;
 }
 .top-bg{
-    height: 200px;
-    width: 400px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    top: 0;
+    height: 300px;
+    width: 500px;
     background-image: url(./images/bg-pattern-card.svg);
     background-repeat: repeat;
-    z-index: 3;
+    
+}
+.profile{
+    position: relative;
+    bottom:10%;
+    margin-top: 0;
+    border: 5px solid #fff;
+    border-radius:50%;
+    
+}
+.profile img{
+    border-radius: 50%;
+}
+.counter{
+    width:500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
 }
