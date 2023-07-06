@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 body{
     
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   
+    font-family: 'Kumbh Sans', sans-serif;
     height: 100vh;
     background-color:hsl(185, 75%, 39%);
     background-image: url(./images/bg-pattern-top.svg);
@@ -13,6 +15,19 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 2%;
+}
+h1,h3{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+}
+h1 span{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+p{
+    color: hsl(0, 0%, 59%);
+    margin-top: 0;
 }
 .container{
     position: absolute;
@@ -30,7 +45,7 @@ body{
     border-radius: 15px 15px 0 0;
     position: relative;
     top: 0;
-    height: 300px;
+    height: 315px;
     width: 500px;
     background-image: url(./images/bg-pattern-card.svg);
     background-repeat: repeat;
@@ -47,10 +62,23 @@ body{
 .profile img{
     border-radius: 50%;
 }
+.bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 5%;
+}
+hr{
+    width: 500px;
+    border: 0.5px solid #eee;
+}
 .counter{
     width:500px;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: space-evenly;
     padding: 10px;
 }
